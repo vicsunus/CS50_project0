@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <meta http-equiv="refresh" content="5"> -->
+        <title>Google Advanced Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <!--<link rel="stylesheet" href="style.css">-->
+        <link rel="stylesheet" href="style_advanced.css">
+<style>
+
+.right {
+    text-align:right;
+}
+.center {
+    margin:0;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+#image-banner {
+    text-align: left;
+    width: 92px;
+    position: inherit;
+    z-index: 1;
+    display:block;
+    margin: 15px 15px;
+    top: 0;
+}
+
+.banner {
+    background-color: #F1F1F1 ;
+    height: 60px;
+    width: 100%;
+    margin:0;
+    top:0;
+    left:0;
+    position: absolute;
+}
+
+#advanced-logo {
+    color: #DA3F2B;
+    font-size: 20px;
+    margin: 60px 40px;
+}
+
+</style>
+    </head>
+
+    <body>
+        <div class="banner">
+            <ul class="right" style="list-style-type:none;">
+                <li id="link"><a href="index.html">Google</a></li>
+            </ul>  
+            <img id="image-banner" src="GoogleLogo.png">
+        </div>
+        <div class="banner2">
+            <span id=advanced-logo>Advanced Search</span>
+        </div>
+        <div style="height:42px; width=100%; position=relative;"></div>
+        <div class="container">
+            <form action="https://www.google.com/search" method="GET"> 
+            <div class="row">
+                <div class="col-left" style="font-size: 16px">Find pages with...</div>
+                <div class="col-mid"></div>
+                <div id="first-right-col">To do this in the search box</div>
+            </div>
+            <div class="row">
+                <div class="col-left">all these words:</div>
+                <div class="col-mid">
+                    <input class="jfk-textinput" value autofocus="autofocus" name="as_q" type="text"></div>
+                <div class="col-right">Type the important words: &nbsp;<span class="courier"> tricolor rat terrirer</span></div>
+            </div>
+            <div class="row">
+                <div class="col-left">this exact word or phrase:</div>
+                <div class="col-mid"><input class="jfk-textinput" value name="as_epq" type="text"></div>
+                <div class="col-right">Put exact words in quotes: &nbsp;<span class="courier">"rat terrier"</span></div>
+            </div>
+            <div class="row">
+                <div class="col-left">any of these words:</div>
+                <div class="col-mid"><input class="jfk-textinput" value name="as_oq" type="text"></div>
+                <div class="col-right">Type OR between all the words you want: &nbsp;<span class="courier">miniature OR standard<span></div>
+            </div>
+            <div class="row">
+                <div class="col-left">none of these words:</div>
+                <div class="col-mid"><input class="jfk-textinput" value name="as_eq" type="text"></div>
+                <div class="col-right">Put a minus sign just before words you don't want:&nbsp;
+                <span class="courier">  -rodent, -"Jack Russell"</span></div>
+            </div>
+            <div class="row">
+                <div class="col-left">numbers ranging from:</div>
+                <div class="col-mid"><input class="jfk-textinput" name="as_nlo" type="text">&nbsp; &nbsp; &nbsp; to &nbsp; &nbsp; &nbsp; <input class="jfk-textinput" name="as_nhi" type="text"></div>
+                <div class="col-right">Put 2 periods between the numbers and add a unit of measure:
+                <span class="courier">10..35 lb, $300..$500, 2010..2011</span></div>
+            </div>
+            <div class="row">
+                <div class="col-left"></div>
+                <div class="col-mid"><div class="right-align"><input name="tbs" type="hidden" value></input><input class="button" value="Advanced Search" type="submit"></div></div>
+                <div class=banner3></div>
+            </div>
+        </div>
+    </body>
+</html>

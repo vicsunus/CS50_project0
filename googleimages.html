@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Images</title>
+        <link rel="stylesheet" href="style.css">
+<style>
+.right {
+    text-align:right;
+}
+.center {
+    margin:0;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+#image {
+    padding:15px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+    </head>
+    <body>
+        <div class="right">
+            <ul style="list-style-type:none;">
+                <li><a href="index.html">Google</a></li>
+</ul>  
+        </div>
+        <div class="center">
+            <div class="container">
+            <img id="image" src="GoogleLogo.png">
+            <div class="bottom-right">Images</div>
+            </div>
+        <form action="https://www.google.com/search" method="get">
+            <input type="hidden" name="tbm" value="isch">
+            <input type="text" name="q">
+
+        </div>
+        </form>
+    </body>
+</html>
+
